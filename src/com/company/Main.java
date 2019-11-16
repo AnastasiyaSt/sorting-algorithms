@@ -1,12 +1,19 @@
-package com.company;
-
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class Main {
-
+public class Arrays1 {
     public static void main(String[] args) {
-        int[] array = {10, 2, 10, 3, 1, 2, 5};
+        System.out.println("Введите количество элементов массива");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] array = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            array[i] = input.nextInt();
+        }
+        System.out.println("Исходный массив:");
         System.out.println(Arrays.toString(array));
+
         for (int left = 0; left < array.length; left++) {
             // Вытаскиваем значение элемента
             int value = array[left];
@@ -24,6 +31,9 @@ public class Main {
             // В освободившееся место вставляем вытащенное значение
             array[i + 1] = value;
         }
+        System.out.println("Отсортированный массив");
         System.out.println(Arrays.toString(array));
     }
 }
+
+
