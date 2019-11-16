@@ -8,7 +8,7 @@ public class Arrays2 {
         int[] array = new int[a];
         for(int i = 0; i < array.length; i++){
             System.out.print("Enter the num: ");
-            array[i] = sc.nextInt();
+             array[i] = sc.nextInt();
         }
         insert(array);
         System.out.println(Arrays.toString(array));
