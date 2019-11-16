@@ -1,2 +1,1 @@
-#Sort
-two sorting algorithms (mine and mate's) 
+#Two sorting algorithms (mine and mate's) 
